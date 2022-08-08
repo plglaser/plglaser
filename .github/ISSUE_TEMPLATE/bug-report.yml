@@ -1,6 +1,5 @@
 name: ⛔️ Bug Report
 description: Report a new bug
-title: "Enter a title"
 labels: [bug]
 body:
 - type: textarea
