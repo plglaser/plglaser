@@ -1,59 +1,50 @@
-name: 🐞 Bug
-description: File a bug/issue
-title: "[BUG] <title>"
-labels: [Bug, Needs Triage]
+name: ⛔️ Bug Report
+description: Report a new bug
+title: ""
+labels: [bug]
 body:
-- type: checkboxes
+- type: textarea
   attributes:
-    label: Is there an existing issue for this?
-    description: Please search to see if an issue already exists for the bug you encountered.
-    options:
-    - label: I have searched the existing issues
-      required: true
+    label: Description
+    description: Provide a concise description of the problem
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: Current Behavior
-    description: A concise description of what you're experiencing.
   validations:
     required: false
 - type: textarea
   attributes:
     label: Expected Behavior
-    description: A concise description of what you expected to happen.
   validations:
     required: false
 - type: textarea
   attributes:
     label: Steps To Reproduce
-    description: Steps to reproduce the behavior.
+    description: How can the bug be reproduced? 
     placeholder: |
-      1. In this environment...
-      2. With this config...
-      3. Run '...'
-      4. See error...
+      1. Go to ...
+      2. Click on ...
+      3. See Error
   validations:
     required: false
 - type: textarea
   attributes:
     label: Environment
     description: |
-      examples:
-        - **OS**: Ubuntu 20.04
-        - **Node**: 13.14.0
-        - **npm**: 7.6.3
+      Provide any environment information you might find useful
     value: |
-        - OS:
-        - Node:
-        - npm:
+        - OS: macOS Monterey v12.5
+        - VS Code: v1.69.2
+        - Java: JDK 11
     render: markdown
   validations:
     required: false
 - type: textarea
   attributes:
-    label: Anything else?
+    label: Additional Information
     description: |
-      Links? References? Anything that will give us more context about the issue you are encountering!
-
-      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+      Provide additional information that might be useful (screenshots, logfiles, model file)
   validations:
     required: false
